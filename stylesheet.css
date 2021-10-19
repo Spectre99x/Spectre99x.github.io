@@ -31,13 +31,13 @@ body{
 
 
 a:link {
-  color: #181818;
+  color: #d8d8d8;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: #d8d8d8;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -47,4 +47,3 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-
