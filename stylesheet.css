@@ -1,49 +1,72 @@
-body{
+body {
     background-color: #181818;
     color: #d8d8d8;
     font-family: 'Anonymous Pro', monospace;
 }
 
+.index:visited {
+    color: #d8d8d8;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 .about:visited {
-  color: #ab4642;
-  background-color: transparent;
-  text-decoration: none;
+    color: #ab4642;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .projects:visited {
-  color: #f7ca88;
-  background-color: transparent;
-  text-decoration: none;
+    color: #f7ca88;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .blog:visited {
-  color: #a1b56c;
-  background-color: transparent;
-  text-decoration: none;
+    color: #a1b56c;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .contact:visited {
-  color: #7cafc2;
-  background-color: transparent;
-  text-decoration: none;
+    color: #7cafc2;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-
 a:link {
-  color: #d8d8d8;
-  background-color: transparent;
-  text-decoration: none;
+    color: #d8d8d8;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-  color: #d8d8d8;
-  background-color: transparent;
-  text-decoration: underline;
+    color: #d8d8d8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.index:hover {
+    color: #d8d8d8;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+    color: #d8d8d8;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1 { 
+    margin-bottom: 0; 
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
 }
