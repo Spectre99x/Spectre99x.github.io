@@ -1,0 +1,50 @@
+body{
+    background-color: #181818;
+    color: #d8d8d8;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+
+.about:visited {
+  color: #ab4642;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.projects:visited {
+  color: #f7ca88;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.blog:visited {
+  color: #a1b56c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact:visited {
+  color: #7cafc2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:link {
+  color: #181818;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
