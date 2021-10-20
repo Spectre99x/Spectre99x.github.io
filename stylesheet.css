@@ -3,7 +3,6 @@ body {
     background-color: #181818;
     color: #d8d8d8;
     font-family: 'Anonymous Pro', monospace;
-    font-weight: bold;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +22,7 @@ html{
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0.1em;
     height:1.2em;
 }
 
@@ -51,11 +50,14 @@ h1, h2, h3, h4 {
     margin-bottom: 0;
     margin-top: 0;
     display: inline;
+    font-weight: bold;
 }
 
 /* -- text -- */
-.cancelled, .developing, .completed, .planning { display: inline; }
-
+.cancelled, .developing, .completed, .planning, span { 
+    display: inline; 
+    font-weight: bold; 
+}
 .footer{ text-align: right }
 
 p {
@@ -92,9 +94,9 @@ a  { font-size: 1.00em; }
 
 
 .project-text, .home-text, .about-text {
-    flex: 1 1 12.2em;
+    flex: 1 1 15em;
     padding: 1em;
-    max-width: 24em;
+    max-width: 30em;
 }
 
 /* -- banner -- */
