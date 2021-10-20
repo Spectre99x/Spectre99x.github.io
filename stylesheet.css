@@ -1,72 +1,101 @@
+/* -- body -- */
 body {
     background-color: #181818;
     color: #d8d8d8;
     font-family: 'Anonymous Pro', monospace;
-}
-
-.index:visited {
-    color: #d8d8d8;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.about:visited {
-    color: #ab4642;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.projects:visited {
-    color: #f7ca88;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.blog:visited {
-    color: #a1b56c;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.contact:visited {
-    color: #7cafc2;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:link {
-    color: #d8d8d8;
-    background-color: transparent;
-    text-decoration: none;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-a:hover {
-    color: #d8d8d8;
-    background-color: transparent;
-    text-decoration: underline;
+html{
+  position: relative; 
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.index:hover {
-    color: #d8d8d8;
-    background-color: transparent;
-    text-decoration: none;
+.content{
+  margin-bottom:1em;
+} 
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:1.2em;
 }
 
-a:active {
-    color: #d8d8d8;
-    background-color: transparent;
-    text-decoration: none;
-}
+/* -- colours -- */
+/* white */
+.index:visited, a:link{ color: #d8d8d8; }
+/* red */
+.about:visited, .about:active, .cancelled { color: #ab4642; }
+/* yellow */
+.projects:visited, .projects:active, .developing {color: #f7ca88; }
+/* green */
+.blog:visited, .blog:active, .completed { color: #a1b56c; }
+/* blue */
+.contact:visited, .contact:active, .planning { color: #7cafc2; }
+/* grey */
+.subtitle, .subtext, .footer { color: #787878; }
 
-h1 { 
-    margin-bottom: 0; 
-}
+/* -- links -- */
+a:hover { filter: brightness(150%); }
+a:active { filter: brightness(150%); }
+a:link { text-decoration: none; }
 
-h3 {
+/* -- headings -- */
+h1, h2, h3, h4 {
     margin-bottom: 0;
+    margin-top: 0;
+    display: inline;
 }
+
+/* -- text -- */
+.cancelled, .developing, .completed, .planning { display: inline; }
+
+.footer{ text-align: right }
 
 p {
+    margin-bottom: 0;
     margin-top: 0;
 }
+
+/* -- sizes -- */
+h1 { font-size: 2.00em; }
+h2 { font-size: 1.20em; }
+h3 { font-size: 1.40em; }
+h4 { font-size: 1.20em; }
+p  { font-size: 1.00em; }
+a  { font-size: 1.00em; }
+
+/* -- flexboxes -- */
+.banner-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.banner-text {
+    padding: 1em;
+}
+
+.project-flex, .home-flex, .about-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+.project-text, .home-text, .about-text {
+    flex: 1 1 12.2em;
+    padding: 1em;
+    max-width: 24em;
+}
+
+/* -- banner -- */
+.banner { padding: 1em; }
