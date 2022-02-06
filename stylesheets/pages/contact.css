@@ -18,18 +18,13 @@
     padding: var(--padding);
     color: var(--foreground);
     border: var(--border) dashed var(--foreground);
-    -webkit-text-fill-color: var(--foreground);
     border-bottom: none;
     background-color: var(--background);
-    -webkit-box-shadow: 0 0 0px 1000px var(--background) inset;
-    transition: background-color 5000s ease-in-out 0s;
     box-shadow: none;
     outline: none;
-    caret-color: var(--foreground) !important;
 }
 
 .contact-text{
-    border: var(--border) dashed var(--foreground);
     flex: 1 0 auto;
     resize: none;
 }
