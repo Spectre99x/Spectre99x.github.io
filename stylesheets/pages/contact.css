@@ -25,6 +25,7 @@
 }
 
 .contact-text{
+    border: var(--border) dashed var(--foreground);
     flex: 1 0 auto;
     resize: none;
 }
