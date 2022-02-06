@@ -1,0 +1,28 @@
+.projects-text:hover, .projects-text:active {
+    filter: brightness(var(--glow));
+}
+
+.projects-flex{
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    margin: calc(var(--padding) / -2);
+}
+
+.projects-text{
+    flex: 1 0 auto;
+    border: var(--border) dashed var(--foreground);
+    background-color: var(--background);
+    margin: calc(var(--padding) / 2);
+    max-width: var(--cardwidth);
+    align-self: stretch;
+    position: relative;
+}
+
+.projects-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

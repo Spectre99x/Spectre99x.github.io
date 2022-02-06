@@ -1,0 +1,43 @@
+.test {
+    height: calc( 100% - calc(var(--padding) * 2));
+}
+
+.contact-flex {
+    padding: var(--padding) 0;
+    height: calc( 100% - calc(var(--padding) * 4));
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.contact-name, .contact-email, .contact-text, .contact-submit {
+    font-family: var(--font);
+    font-size: var(--medium);
+    padding: var(--padding);
+    color: var(--foreground);
+    border: var(--border) dashed var(--foreground);
+    border-bottom: none;
+    background-color: var(--background);
+    box-shadow: none;
+    outline: none;
+}
+
+
+.contact-text{
+    border: var(--border) dashed var(--foreground);
+    flex: 1 0 auto;
+    resize: none;
+}
+
+.contact-text:focus, .contact-email:focus, .contact-name:focus, .contact-submit:hover, .contact-submit:active {
+    filter: brightness(var(--glow));
+    outline: none;
+}
+
+.contact-submit{
+    border: var(--border) dashed var(--foreground);
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-top: var(--padding);
+}
