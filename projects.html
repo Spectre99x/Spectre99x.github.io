@@ -1,98 +1,73 @@
 <!doctype html>
 <html>
     <head>
-        <title>Projects - Rhys Phillips</title>
-        <meta name="description" content="Some projects I'm working on">
-        <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no">
-        <link rel="stylesheet" href="stylesheet.css">
+        <title>Rhys Phillips - Projects</title>
+        <meta name="description" content="My personal projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.00">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet"> 
-
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/reset.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
     </head>
 
-    <!-- Page content -->
     <body>
-        <div class="content">
-
-            <!-- Page banner -->
-            <div class="banner-flex">
-                <div class="banner-text">
-                    <a class="index" href="index.html">
-                        <h1>Rhys Phillips<br></h1>
-                        <h2 class="subtitle">Software Developer</h2>
-                    </a>    
-                </div>
-                <div class="banner-text">
-                    <h2><a class="about" href="about.html">About</a></h2>
-                    <h2><a class="projects" href="projects.html">Projects</a></h2>
-                    <h2><a class="blog" href="blog.html">Blog</a></h2>
-                    <h2><a class="contact" href="contact.html">Contact</a></h2>
-                </div>
-            </div>
-        
-            <!-- Page subheading -->
-            <div class="banner-text">
-                <h3>/* Projects */</h3>
-            </div>
-
-            <!-- Page content -->
-            <div class="project-flex">
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Deep learning Chess AI</h4>
-                        <p>A chess engine utilising a deep neural network to play chess at superhuman levels.</p>
-                        <span>Status:</span>
-                        <p class="completed">Completed</p>
-                    </a>
-                </div>
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Handwriting classifier</h4>
-                        <p>A simple neural network able to interpret human handwriting as a pathfinder for future projects.</p>
-                        <span>Status:</span>
-                        <p class="completed">Completed</p>
-                    </a>
-                </div>
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Deep learning photo editor</h4>
-                        <p>A small application to allow for users to conduct simple style transfers using a neural network.</p>
-                        <span>Status:</span>
-                        <p class="developing">Developing</p>
-                    </a>
-                </div>
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Mandelbrot Set visualiser</h4>
-                        <p>A small application to help users understand how the mandelbrot set is calculated visually.</p>
-                        <span>Status:</span>
-                        <p class="developing">Developing</p>
-                    </a>
-                </div>
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Personal website</h4>
-                        <p>A basic website to showcase my projects and my blog. You are currently viewing it now!</p>
-                        <span>Status:</span>
-                        <p class="developing">Developing</p>
-                    </a>
-                </div>
-                <div class="project-text">
-                    <a class="index" href="">
-                        <h4>Chess game</h4>
-                        <p>A simple game engine to play chess using C++ to benefit from its extra performance.</p>
-                        <span>Status:</span>
-                        <p class="planning">Planning</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Page footer -->
-        <div class="footer">
-            <p><a class="footer" href="https://github.com/Spectre99x/Spectre99x.github.io">Version 0.1.1</a></p>
-        </div>
-
+        <header>
+            <h1><a class="index" href="index.html">Rhys Phillips</a></h1>
+            <nav>
+                <h2><a class="about" href="about.html">About</a></h2>
+                <h2><a class="projects" href="projects.html">Projects</a></h2>
+                <h2><a class="blog" href="blog.html">Blog</a></h2>
+                <h2><a class="contact" href="contact.html">Contact</a></h2>
+            </nav>
+        </header>
+        <main>
+            <h2>/* Projects */</h2>
+            <article class="projects-flex">
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Chess Engine</p>
+                    <small class="subtext">A chess engine utilising a deep neural network to play chess at superhuman levels.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Handwriting classifier</p>
+                    <small class="subtext">A simple neural network able to interpret human handwriting as a pathfinder for future projects.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Photo editor</p>
+                    <small class="subtext">A small application to allow for users to conduct simple style transfers using a neural network.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Curve fitter</p>
+                    <small class="subtext">A neural network able to predict and plot a function using partial sample data.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Mandelbrot Set visualiser</p>
+                    <small class="subtext">A small application to help users understand how the mandelbrot set is calculated visually.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Personal website</p>
+                    <small class="subtext">A basic website to showcase my projects and my blog. You are currently viewing it now!</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Chess game</p>
+                    <small class="subtext">A simple game engine to play chess using C++ to benefit from its extra performance.</small>
+                </section>
+                <section class="projects-text">
+                    <a class="projects-link" href=""></a>
+                    <p>Type booster</p>
+                    <small class="subtext">A application to practice and improve typing accurazy and words per minute.</small>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p class="footer">Version 0.2.0</p>
+        </footer><br> 
     </body>
 </html>

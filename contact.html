@@ -1,63 +1,39 @@
 <!doctype html>
 <html>
     <head>
-        <title>Contact - Rhys Phillips</title>
+        <title>Rhys Phillips - Contact</title>
         <meta name="description" content="Get in touch">
-        <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable=no">
-        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.00">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet"> 
-
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/reset.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
     </head>
 
-
-    
-    <!-- Page content -->
     <body>
-        <div class="content">
-
-            <!-- Page banner -->
-            <div class="banner-flex">
-                <div class="banner-text">
-                    <a class="index" href="index.html">
-                        <h1>Rhys Phillips<br></h1>
-                        <h2 class="subtitle">Software Developer</h2>
-                    </a>    
-                </div>
-                <div class="banner-text">
-                    <h2><a class="about" href="about.html">About</a></h2>
-                    <h2><a class="projects" href="projects.html">Projects</a></h2>
-                    <h2><a class="blog" href="blog.html">Blog</a></h2>
-                    <h2><a class="contact" href="contact.html">Contact</a></h2>
-                </div>
-            </div>
-        
-            <!-- Page subheading -->
-            <div class="banner-text">
-                <h3>/* Contact */</h3>
-            </div>
-
-            <!-- Page content -->
-            <div class="banner-text">
-                <div class="form-entry">
-                    <form name="gform" id="gform" target="contact.html" action="https://docs.google.com/forms/d/e/1FAIpQLSc3aVRyiKkOPakXw2RFwjN2HtWTLaxGD5LfiYI1BmhI2g9TsQ/formResponse?">
-                        <label for="entry.217676462">/* Name */</label><br>
-                        <input type="text" name="entry.217676462" id="entry.217676462" required><br><br>
-                        <label for="entry.1097892163">/* Email */</label><br>
-                        <input type="email" name="entry.1097892163" id="entry.1097892163" required><br><br>
-                        <label for="entry.1427860985">/* Comment */</label><br>
-                        <textarea name="entry.1427860985" id="entry.1427860985" rows="8" cols="50" style="resize: none;overflow: hidden;" required></textarea></br><br>
-                        <input type="submit" name="" value="submit">
-                    </form>
-                </div> 
-            </div>
-        </div>
-
-        <!-- Page footer -->
-        <div class="footer">
-            <p><a class="footer" href="https://github.com/Spectre99x/Spectre99x.github.io">Version 0.1.1</a></p>
-        </div>
-
+        <header>
+            <h1><a class="index" href="index.html">Rhys Phillips</a></h1>
+            <nav>
+                <h2><a class="about" href="about.html">About</a></h2>
+                <h2><a class="projects" href="projects.html">Projects</a></h2>
+                <h2><a class="blog" href="blog.html">Blog</a></h2>
+                <h2><a class="contact" href="contact.html">Contact</a></h2>
+            </nav>
+        </header>
+        <main>
+            <h2>/* Contact */</h2>
+            <article>
+                <form name="gform" id="gform" target="contact.html" action="https://docs.google.com/forms/d/e/1FAIpQLSc3aVRyiKkOPakXw2RFwjN2HtWTLaxGD5LfiYI1BmhI2g9TsQ/formResponse?">
+                    <input class="contact-name" placeholder="Name" type="text" name="entry.217676462" id="entry.217676462" required>
+                    <input class="contact-email" placeholder="Email" type="email" name="entry.1097892163" id="entry.1097892163" required>
+                    <textarea class="contact-text" placeholder="Your Message" name="entry.1427860985" id="entry.1427860985" required></textarea>
+                    <input class= "contact-submit" type="submit" name="" value="submit">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p class="footer">Version 0.2.0</p>
+        </footer><br> 
     </body>
 </html>

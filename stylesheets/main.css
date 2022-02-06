@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "VT323";
+    src: url("../fonts/VT323-Regular.ttf");
+}
+
+
+/* -- Body -- */
+html { height: calc(100vh - 1em); }
+
+body {
+    background-color: #181818;
+    color: #d8d8d8;
+    font-family: 'VT323', monospace;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1em 1em 0em 1em;
+}
+
+/* -- Fonts -- */
+@media only screen and (max-width: 650px) {
+    h1 { font-size: 12vw; }
+    h2 { font-size: 6vw; }
+    p { font-size: 4vw; }
+    small { font-size: 3vw; }
+}
+
+@media only screen and (min-width: 651px) {
+    h1{ font-size: 6.00em; }
+    h2 { font-size: 3.00em; }
+    p { font-size: 2.00em; }
+    small { font-size: 1.50em; }
+}
+
+/* -- colours -- */
+.index:visited, a:link{ color: #d8d8d8; }
+.about:visited, .about:active, .cancelled { color: #ab4642; }
+.projects:visited, .projects:active, .developing {color: #f7ca88; }
+.blog:visited, .blog:active, .completed { color: #a1b56c; }
+.contact:visited, .contact:active, .planning { color: #7cafc2; }
+.subtext, .footer { color: #787878; }
+
+/* -- Header -- */
+h1 { padding-right: 0.5em; }
+header {
+    padding: 1em;
+    border: 0.25em dashed #d8d8d8;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
+/* -- Navbar -- */
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 0.25 auto
+}
+
+@media only screen and (max-width: 1200px) {
+    nav{ max-width: 100%; }
+}
+
+@media only screen and (min-width: 1201px) {
+    nav{ max-width: 50rem; }
+}
+
+
+/* -- links -- */
+a:hover { filter: brightness(150%); }
+a:active { filter: brightness(150%); }
+a:link { text-decoration: none; }
+.projects-text:hover { filter: brightness(150%); }
+.projects-text:active { filter: brightness(150%); }
+.contact-submit:hover { filter: brightness(150%); }
+.contact-submit:active { filter: brightness(150%); }
+
+/* -- Main -- */
+main {
+    padding: 1em;
+    flex-grow: 1;
+    border-left: 0.25em dashed #d8d8d8;
+    border-right: 0.25em dashed #d8d8d8;
+}
+
+/* -- Article -- */
+article{
+    padding: 1em 0em;
+}
+
+/* -- Footer -- */
+footer {
+    padding: 1em;
+    border: 0.25em dashed #d8d8d8;
+    text-align: right;
+}
+
+.projects-flex{
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    margin: -0.5em;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .projects-text{ max-width: calc(100% - 3.5em); }
+}
+
+@media only screen and (min-width: 801px) and  (max-width: 2560px){
+    .projects-text{ max-width: calc(50% - 3.5em); }
+}
+
+@media only screen and (min-width: 2561px) {
+    .projects-text{ max-width: calc(25% - 3.5em); }
+}
+
+
+.projects-text{
+    flex: 1 0 auto;
+    align-self: stretch;
+    margin: 0.5em;
+    padding: 1em;
+    border: 0.25em dashed #d8d8d8;
+    background-color: #181818;
+    position: relative;
+}
+
+.projects-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-name{
+    padding: 1rem;
+    color: #d8d8d8;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    border: 0.25rem dashed #d8d8d8;
+    border-bottom: none;
+    width: calc(100% - 2.5rem);
+    background-color: #181818;
+    box-shadow: none;
+}
+
+.contact-email{
+    padding: 1rem;
+    color: #d8d8d8;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    
+    border: 0.25rem dashed #d8d8d8;
+    border-bottom: none;
+    width: calc(100% - 2.5rem);
+    background-color: #181818;
+    box-shadow: none;
+}
+
+.contact-text{
+    padding: 1rem;
+    color: #d8d8d8;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    border: 0.25rem dashed #d8d8d8;
+    width: calc(100% - 2.5rem);
+    height: calc(100vh - 40rem);
+    background-color: #181818;
+    box-shadow: none;
+    resize: none;
+}
+
+.contact-text:focus, .contact-email:focus, .contact-name:focus{
+    filter: brightness(150%);
+    outline: none;
+}
+
+.contact-submit{
+   padding: 1rem;
+    color: #d8d8d8;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    border: 0.25rem dashed #d8d8d8;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #181818;
+    box-shadow: none;
+    resize: none;
+}
