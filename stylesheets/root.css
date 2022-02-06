@@ -11,24 +11,22 @@
     --glow: 150%
 }
 
-/* Large font sizes */
-@media only screen and (min-width: 1280px) {
+/* Mobile font sizes */
+@media only screen and (max-width: 999px), (max-height: 999px) {
     :root {
-    --navwidth: 50rem;
-    --border: 0.2rem;
-    --padding: 1.00rem;
-    --small: 1.50rem;
-    --medium: 2.00rem;
-    --large: 3.00rem;
-    --huge: 4.00rem;
-    --cardwidth: calc(50% - calc(var(--padding) * 3.45));
+    --border: min(0.40vmin, 0.2rem);
+    --padding: min(2.00vmin, 1.00rem);
+    --small: min(3.00vmin, 1.5rem);
+    --medium: min(4.00vmin, 2.0rem);
+    --large: min(6.00vmin, 3.0rem);
+    --huge: min(12.00vmin, 4.0rem);
+    --cardwidth: calc(100% - calc(var(--padding) * 3.45));
     }
 }
 
 /* Small font sizes */
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1000px) and (max-width: 1279px) {
     :root {
-    --navwidth: 100%;
     --border: min(0.40vw, 0.2rem);
     --padding: min(2.00vw, 1.00rem);
     --small: min(3.00vw, 1.5rem);
@@ -36,6 +34,21 @@
     --large: min(6.00vw, 3.0rem);
     --huge: min(12.00vw, 4.0rem);
     --cardwidth: calc(100% - calc(var(--padding) * 3.45));
+    }
+}
+
+
+/* Large font sizes */
+@media only screen and (min-width: 1280px) {
+    :root {
+    --navwidth: 40rem;
+    --border: 0.2rem;
+    --padding: 1.00rem;
+    --small: 1.50rem;
+    --medium: 2.00rem;
+    --large: 3.00rem;
+    --huge: 4.00rem;
+    --cardwidth: calc(50% - calc(var(--padding) * 3.45));
     }
 }
 
@@ -84,6 +97,7 @@ nav {
 }
 
 main {
+    overflow-y: auto;
     padding: var(--padding);
     border: var(--border) dashed var(--foreground);
     border-bottom: none;
@@ -131,16 +145,28 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
-    filter: brightness(var(--glow));
-}
-
-a:active {
-    filter: brightness(var(--glow));
-}
-
-a:visited{
+a:visited {
     color: var(--foreground);
+}
+
+a:hover, a:active {
+    filter: brightness(var(--glow));
+}
+
+input:hover, input:focus, input:active {
+    filter: brightness(var(--glow));
+    outline: none;
+}
+
+textarea:hover, textarea:focus, textarea:active {
+    filter: brightness(var(--glow));
+    outline: none;
+}
+
+.projects-link{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .index:visited{

@@ -10,9 +10,7 @@
     flex-direction: column;
 }
 
-
-.contact-name, .contact-email, .contact-text, .contact-submit{
-    
+.contact-name, .contact-email, .contact-text, .contact-submit {
     font-family: var(--font);
     font-size: var(--medium);
     padding: var(--padding);
@@ -28,11 +26,6 @@
     border: var(--border) dashed var(--foreground);
     flex: 1 0 auto;
     resize: none;
-}
-
-.contact-text:focus, .contact-email:focus, .contact-name:focus, .contact-submit:hover, .contact-submit:active {
-    filter: brightness(var(--glow));
-    outline: none;
 }
 
 .contact-submit{

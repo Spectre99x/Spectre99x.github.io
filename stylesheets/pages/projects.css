@@ -3,6 +3,7 @@
 }
 
 .projects-flex{
+    padding: 1em 0 0 0;
     display: flex;
     align-items: stretch;
     justify-content: stretch;
@@ -16,7 +17,7 @@
     border: var(--border) dashed var(--foreground);
     background-color: var(--background);
     margin: calc(var(--padding) / 2);
-    max-width: var(--cardwidth);
+    width: var(--cardwidth);
     align-self: stretch;
     position: relative;
 }
