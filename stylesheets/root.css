@@ -34,7 +34,7 @@
     --small: min(3.00vw, 1.5rem);
     --medium: min(4.00vw, 2.0rem);
     --large: min(6.00vw, 3.0rem);
-    --huge: min(12.00vw, 6.0rem);
+    --huge: min(12.00vw, 4.0rem);
     --cardwidth: calc(100% - calc(var(--padding) * 3.45));
     }
 }
@@ -54,6 +54,7 @@ body {
     font-family: var(--font);
     background-color: var(--background);
     color: var(--foreground);
+    caret-color: var(--foreground) !important;
     padding: var(--padding);
     padding-bottom:0;
     height: 100%;
