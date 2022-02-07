@@ -18,7 +18,7 @@
 }
 
 html {
-    font-size: min(2.50vmin, 1.00rem);
+    font-size: min(2.25vmin, 1.00rem);
     height: calc(100% - calc(var(--padding) * 2));
 }
 
