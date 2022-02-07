@@ -35,7 +35,8 @@
 }
 
 .contact-section {
-    height: calc( 100% - calc(var(--padding) * 4));
+    padding: calc(var(--padding) * 2) 0 0 0;
+    height: calc( 100% - calc(var(--padding) * 5));
 }
 
 .subtext{
