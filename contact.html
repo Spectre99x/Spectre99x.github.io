@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="stylesheets/reset.css">
         <link rel="stylesheet" href="stylesheets/root.css">
         <link rel="stylesheet" href="stylesheets/pages/contact.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
 
     <body>
@@ -23,18 +27,22 @@
             </nav>
         </header>
         <main>
-            <h2>/* Contact */</h2>
-            <form autocomplete="off" class="contact-flex" id="form" action="https://docs.google.com/forms/d/e/1FAIpQLSc3aVRyiKkOPakXw2RFwjN2HtWTLaxGD5LfiYI1BmhI2g9TsQ/formResponse">
-                <input class="contact-name" placeholder="Name" type="text" name="entry.217676462" id="name" required>
-                <input class="contact-email" placeholder="Email" type="email" name="entry.1097892163" id="email" required>
-                <textarea class="contact-text" placeholder="Your Message" name="entry.1427860985" id="text" required></textarea>
-                <input class= "contact-submit" type="submit" id="submit" value="Send">
-                <h1 class="subtext" id="success">/* Message Sent */</h1>
-                <script src="./scripts/contact.js"></script>
-            </form>
+            <article class="contact-article">
+                <h2>/* Contact */</h2>
+                <section class="contact-section">
+                    <form autocomplete="off" class="contact-flex" id="form" action="https://docs.google.com/forms/d/e/1FAIpQLSc3aVRyiKkOPakXw2RFwjN2HtWTLaxGD5LfiYI1BmhI2g9TsQ/formResponse">
+                        <input class="contact-name" placeholder="Your Name" type="text" name="entry.217676462" id="name" required>
+                        <input class="contact-email" placeholder="Your Email" type="email" name="entry.1097892163" id="email" required>
+                        <textarea class="contact-text" placeholder="Your Message" name="entry.1427860985" rows="1" id="text" required></textarea>
+                        <input class= "contact-submit" type="submit" id="submit" value="Send">
+                        <h1 class="subtext" id="success">/* Message Sent */</h1>
+                        <script src="./scripts/contact.js"></script>
+                    </form>
+                </section>
+            </article>
         </main>
         <footer>
-            <p class="footer">Version 0.2.6</p>
-        </footer><br> 
+            <p class="footer">Version 0.2.7</p>
+        </footer>
     </body>
 </html>

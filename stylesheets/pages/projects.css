@@ -8,16 +8,18 @@
     align-items: stretch;
     justify-content: stretch;
     flex-wrap: wrap;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     margin: calc(var(--padding) / -2);
 }
 
 .projects-text{
-    flex: 1 0 auto;
-    border: var(--border) dashed var(--foreground);
+    flex: 1 1 auto;
+    border: var(--border);
+    padding: var(--padding);
     background-color: var(--background);
     margin: calc(var(--padding) / 2);
-    width: var(--cardwidth);
+    max-width: 100%;
+    width: 30rem;
     align-self: stretch;
     position: relative;
 }

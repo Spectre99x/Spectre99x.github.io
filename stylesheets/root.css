@@ -8,68 +8,26 @@
     --blue: #7cafc2;
     --yellow: #f7ca88;
     --grey: #787878;
-    --glow: 150%
-}
-
-/* Mobile font sizes */
-@media only screen and (max-width: 999px), (max-height: 999px) {
-    :root {
-    --border: min(0.40vmin, 0.2rem);
-    --padding: min(2.00vmin, 1.00rem);
-    --small: min(3.00vmin, 1.5rem);
-    --medium: min(4.00vmin, 2.0rem);
-    --large: min(6.00vmin, 3.0rem);
-    --huge: min(12.00vmin, 4.0rem);
-    --cardwidth: calc(100% - calc(var(--padding) * 3.45));
-    }
-}
-
-/* Small font sizes */
-@media only screen and (min-width: 1000px) and (max-width: 1279px) {
-    :root {
-    --border: min(0.40vw, 0.2rem);
-    --padding: min(2.00vw, 1.00rem);
-    --small: min(3.00vw, 1.5rem);
-    --medium: min(4.00vw, 2.0rem);
-    --large: min(6.00vw, 3.0rem);
-    --huge: min(12.00vw, 4.0rem);
-    --cardwidth: calc(100% - calc(var(--padding) * 3.45));
-    }
-}
-
-
-/* Large font sizes */
-@media only screen and (min-width: 1280px) {
-    :root {
-    --navwidth: 40rem;
-    --border: 0.2rem;
+    --border: 0.2rem dashed #d8d8d8;
     --padding: 1.00rem;
-    --small: 1.50rem;
-    --medium: 2.00rem;
-    --large: 3.00rem;
-    --huge: 4.00rem;
-    --cardwidth: calc(50% - calc(var(--padding) * 3.45));
-    }
-}
-
-/* Huge screen support */
-@media only screen and (min-width: 2560px) {
-    :root {
-        --cardwidth: calc(25% - calc(var(--padding) * 3.45));
-    }
+    --small: 1.5rem;
+    --medium: 2.0rem;
+    --large: 3.0rem;
+    --huge: 4.0rem;
+    --glow: 150%;
 }
 
 html {
-    height: calc(100vh - var(--padding));
+    font-size: min(2.50vmin, 1.00rem);
+    height: calc(100% - calc(var(--padding) * 2));
 }
 
 body {
-    font-family: var(--font);
-    background-color: var(--background);
-    color: var(--foreground);
-    caret-color: var(--foreground) !important;
     padding: var(--padding);
-    padding-bottom:0;
+    font-family: var(--font);
+    color: var(--foreground);
+    background-color: var(--background);
+    caret-color: var(--foreground);
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -77,8 +35,8 @@ body {
 }
 
 header {
-    padding: var(--padding);
-    border: var(--border) dashed var(--foreground);
+    padding: var(--padding) calc(var(--padding) * 2);
+    border: var(--border);
     border-bottom: none;
     display: flex;
     justify-content: space-between;
@@ -87,66 +45,55 @@ header {
 }
 
 nav {
-    width: 100%;
-    max-width: var(--navwidth);
+    width: calc(var(--padding) * 40);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    flex: 1 0.25 auto;
 }
 
 main {
-    overflow-y: auto;
     padding: var(--padding);
-    border: var(--border) dashed var(--foreground);
+    border: var(--border);
     border-bottom: none;
+    overflow-y: auto;
     flex-grow: 1;
 }
 
 article {
-    padding: var(--padding) 0;
+    padding: var(--padding);
 }
 
 section {
-    padding: var(--padding);
+    padding: var(--padding) 0 0 0;
 }
 
 footer {
     padding: var(--padding);
-    border: var(--border) dashed var(--foreground);
+    border: var(--border);
     text-align: right;
-}
-
-br {
-    display: block;
-    content: "";
-    padding-top: var(--padding);
 }
 
 h1 {
     font-size: var(--huge);
+    padding-right: calc(var(--padding) * 5);
 }
 
 h2 {
     font-size: var(--large);
 }
 
-p {
+h3 {
     font-size: var(--medium);
 }
 
-small {
+p {
     font-size: var(--small);
 }
 
-a:link {
+a:link, a:visited {
     color: var(--foreground);
     text-decoration: none;
-}
-
-a:visited {
-    color: var(--foreground);
 }
 
 a:hover, a:active {
@@ -188,6 +135,7 @@ textarea:hover, textarea:focus, textarea:active {
 .projects:visited, .projects:active, .developing {
     color: var(--yellow);
 }
+
 .subtext, .footer, .footer:link, .footer:visited {
     color: var(--grey);
 }
