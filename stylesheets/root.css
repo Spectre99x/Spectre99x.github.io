@@ -19,6 +19,7 @@
 html {
     font-size: min(2.25vmin, 1.00rem);
     height: calc(100vh - calc(var(--padding) * 2));
+    color-scheme: dark;
 }
 
 body {
