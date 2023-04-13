@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Rhys Phillips - Spectre</title>
+        <meta name="description" content="Spectre Chess engine">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.00">
+        <link rel="preload" href="../assets/font/VT323-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="../stylesheets/reset.css">
+        <link rel="stylesheet" href="../stylesheets/root.css">
+        <link rel="stylesheet" href="../stylesheets/pages/paper.css">
+        <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1><a class="index" href="../index.html">Rhys Phillips</a></h1>
+            <nav>
+                <h2><a class="about" href="../about.html">About</a></h2>
+                <h2><a class="projects" href="../projects.html">Projects</a></h2>
+                <h2><a class="blog" href="../blog.html">Blog</a></h2>
+                <h2><a class="contact" href="../contact.html">Contact</a></h2>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>/* Chess engine */</h2>
+                <section class="paper-grid">
+                    <div>
+                        <h3>Project Spectre</h3>
+                        <p>Chess gameplay has been widely studied in computer science for many reasons, while on the face of things chess might seem like a simple two player game, getting computers to play the game at a skill level higher than humans has only recently been achieved. The large branching factor has been a challenge to control and many papers have attempted to find novel solutions.</p>
+                        <p>These solutions generally require significant computational resources. A solution to this problem was found by combining a neural network and a minimax search algorithm in order to reduce the branching factor of chess. The result being a new algorithm capable of high level human-like chess gameplay without the performance cost.</p>
+                    </div>
+                    <div class="infobox">
+                        <div class="artwork">
+                            <br><br><br><br><br><br><br><br>
+                            <p class="subtext" style="text-align:center" >/* PLACEHOLDER IMAGE */</p>
+                            <br><br><br><br><br><br><br><br>
+                        </div>
+                        <section>
+                            <p>Status: <a class="developing">In development</a></p>
+                            <p>Language: <a href="https://docs.python.org/3/faq/">Python</a></p>
+                            <p>Environment: <a href="https://research.google.com/colaboratory/faq.html">Google Colaboratory</a></p>
+                            <p>Libraries: 
+                                <a href="https://www.tensorflow.org/guide">Tensorflow</a>, 
+                                <a href="https://keras.io/getting_started/faq/">Keras</a>,
+                                <a href="https://numpy.org/doc/stable/user/index.html">Numpy</a>, 
+                                <a href="https://python-chess.readthedocs.io/en/latest/">Python-Chess</a></p>
+                            <p>Repo: <a href="https://github.com/Spectre99x/spectre-ai">https://github.com/Spectre99x/spectre-ai</a></p>
+                        </section>
+                    </div>
+                    <div class="contents">
+                        <h3>Contents</h3>
+                        <ol>
+                            <li><a href="#goals">Platform</a></li>
+                            <li><a href="#goals">Dataset</a></li>
+                            <li><a href="#goals">Model</a></li>
+                            <li><a href="#design">Algorithm</a></li>
+                            <li><a href="#goals">Testing</a></li>
+                            <li><a href="#results">Results</a></li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="goals">
+                    <h3>Goals</h3>
+                    <p>The project aims to utilise convolutional neural networks to mimic professional human chess play while focussing on keeping the implementation computationally efficient. A variety of network structures will be tested and the most promising structure will then be paired with a minimax search algorithm with the aim to provide an increase in gameplay performance and human-like gameplay.</p>
+                </section>
+                <section id="design">
+                    <h3>Design</h3>
+                    <p>The goal is to represent the chess board as a 12 channel image, with each channel being mapped to the 12 unique piece types on a chess board. Convolutional neural networks excel with feature extraction from images, so it hoped that the policy models will extract key features from piece position matrices and classify ideal moves for them, like how a convolutional image classifier can identify objects from images.</p>
+                </section>
+                <section id="results">
+                    <h3>Results</h3>
+                    <p>The project produced a neural network not only able to play chess completely on its own but a hybrid decision algorithm which uses a neural network in combination with a decision algorithm to increase its gameplay performance.</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p><a class="footer" href="https://github.com/Spectre99x/personal-website">Version 0.3.0</a></p>
+        </footer>
+    </body>
+</html>

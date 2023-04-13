@@ -1,0 +1,30 @@
+.paper-grid {
+    display: grid;
+    grid-gap: var(--padding);
+    grid-template-columns: auto calc(var(--padding) * 32);
+    grid-template-rows: auto 1fr;
+}
+
+.contents {
+    align-self: center;
+}
+
+.infobox {
+    border: var(--border);
+    padding: 1em;
+    position: relative;
+    grid-row-end: span 2;
+    align-self: start;
+}
+
+.artwork {
+    border: var(--border);
+    padding: 1em;
+    position: relative;
+}
+
+@media only screen and (max-width: 70rem) {
+    .paper-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
